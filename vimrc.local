@@ -1,0 +1,11 @@
+syntax enable
+
+let &t_Co=256
+
+set background=dark
+set clipboard+=unnamedplus
+set clipboard=unnamed           "use the system clipboard
+set completefunc=emoji#complete "use emoji for user-defined completions
+set relativenumber
+
+set textwidth=999
