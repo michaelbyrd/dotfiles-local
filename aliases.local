@@ -1,4 +1,5 @@
 # Productivity
 alias todo='$EDITOR ~/.todo'
+alias notes='$EDITOR ~/.vim_notes'
 alias be='bundle exec'
 alias dc='docker-compose'

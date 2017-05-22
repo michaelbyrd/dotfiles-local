@@ -1,2 +1,7 @@
-Plug 'w0ng/vim-hybrid'
 Plug 'altercation/vim-colors-solarized'
+Plug 'godlygeek/tabular'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'w0ng/vim-hybrid'
