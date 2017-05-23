@@ -1,3 +1,7 @@
 unbind C-b
 set -g prefix C-Space
 bind Space send-prefix
+
+# enable pbcopy and pbpaste
+# https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/blob/master/README.md
+set-option -g default-command "reattach-to-user-namespace -l zsh"
