@@ -1,7 +1,12 @@
 [alias]
   l = log --pretty=colored
+  ll = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  c = commit -v
+  a = add -p
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
   name = Michael Byrd
   email = michaelbyrdsemail@gmail.com
+[merge]
+  ff = false
