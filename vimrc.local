@@ -22,3 +22,9 @@ nnoremap <leader>es :vsplit ~/dotfiles-local/vim/snips<cr>
 nnoremap <leader>v :source $MYVIMRC<cr>
 
 set noshowmode
+
+" Reset the arrow behavior
+nunmap <Up>
+nunmap <Right>
+nunmap <Down>
+nunmap <Left>
