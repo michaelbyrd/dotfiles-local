@@ -2,11 +2,18 @@ colorscheme solarized
 syntax enable
 
 let &t_Co=256
+"let test#ruby#rspec#executable = 'docker exec -i platform_hermes_1 bundle exec rspec'
+"let test#strategy = 'neovim'
+"let test#strategy = 'terminal'
+"let test#strategy = 'basic'
+let test#strategy = 'vtr'
+"let test#strategy = 'dispatch'
 
 set background=dark
 set clipboard+=unnamedplus
 set clipboard=unnamed           "use the system clipboard
 set completefunc=emoji#complete "use emoji for user-defined completions
+set numberwidth=3
 "set relativenumber
 
 set textwidth=999
