@@ -8,3 +8,5 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'w0ng/vim-hybrid'
 Plug 'tpope/vim-dispatch'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'majutsushi/tagbar'
+
