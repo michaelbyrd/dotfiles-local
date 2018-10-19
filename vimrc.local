@@ -27,6 +27,7 @@ nnoremap <leader>es :vsplit ~/dotfiles-local/vim/snips<cr>
 nnoremap <leader>v :source $MYVIMRC<cr>
 
 nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <F8> :TagbarToggle<CR>
 
 set noshowmode
 
