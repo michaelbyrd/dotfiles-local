@@ -6,7 +6,11 @@ alias be='bundle exec'
 alias dc='docker-compose'
 alias ga='git add -p'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias sync="./libexec/autorsync.py . dev:/opt/site --cleanup"
-alias mouse="osascript '/Users/byrd/Library/Mobile Documents/com~apple~ScriptEditor2/Documents/ChangeScrollDirection.scpt'"
+# alias sync="./libexec/autorsync.py . dev:/opt/site --cleanup"
+alias sync="./libexec/autorsync.py . dev:/opt/site"
+
+alias mycommits="git log --since=7.days --author='Michael Byrd'"
+alias got="git"
+
 
 alias dev="ssh dev"
