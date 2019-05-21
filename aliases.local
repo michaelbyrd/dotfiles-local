@@ -1,16 +1,23 @@
 # Productivity
 alias todo='$EDITOR ~/.todo'
 alias notes='$EDITOR ~/.vim_notes'
+alias hack='$EDITOR ~/.hack'
 alias data='$EDITOR ~/.data'
 alias be='bundle exec'
 alias dc='docker-compose'
 alias ga='git add -p'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-# alias sync="./libexec/autorsync.py . dev:/opt/site --cleanup"
-alias sync="./libexec/autorsync.py . dev:/opt/site"
+alias sync="./libexec/autorsync.py . dev:/opt/site --cleanup"
+# alias sync="./libexec/autorsync.py . dev:/opt/site"
 
 alias mycommits="git log --since=7.days --author='Michael Byrd'"
 alias got="git"
 
 
 alias dev="ssh dev"
+
+
+
+alias playerbuild="make local DEST=~/projects/site/app/myvoice/swf"
+# alias playerbuild="make local DEST=/Users/byrd/projects/clients/browser/src/web/gulp/build/myvoice/swf"
+
