@@ -16,8 +16,9 @@ alias got="git"
 
 alias dev="ssh dev"
 
+alias weather="curl wttr.in"
 
-
+alias graderbuild="./vt dist lti-grader  && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/lti-grader/* /Users/byrd/projects/site/app/lti-grader/"
 alias playerbuild="make local DEST=~/projects/site/app/myvoice/swf"
 # alias playerbuild="make local DEST=/Users/byrd/projects/clients/browser/src/web/gulp/build/myvoice/swf"
 
