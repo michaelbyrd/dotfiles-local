@@ -22,3 +22,5 @@ alias graderbuild="./vt dist lti-grader  && cp /Users/byrd/projects/clients/brow
 alias playerbuild="make local DEST=~/projects/site/app/myvoice/swf"
 # alias playerbuild="make local DEST=/Users/byrd/projects/clients/browser/src/web/gulp/build/myvoice/swf"
 
+alias studentbuild="yarn build && cp -r dist/* /Users/byrd/projects/site/app/lti-student"
+
