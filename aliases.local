@@ -18,10 +18,15 @@ alias dev="ssh dev"
 
 alias weather="curl wttr.in"
 
+alias mobileredirectbuild="./vt dist mobile-redirect && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/mobile-redirect/* /Users/byrd/projects/site/js/mobile-redirect/"
 alias graderbuild="./vt dist lti-grader  && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/lti-grader/* /Users/byrd/projects/site/app/lti-grader/"
+alias mobileredirectbuild="./vt dist mobile-redirect  && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/mobile-redirect/* /Users/byrd/projects/site/app/mobile-redirect/"
 alias playerbuild="make local DEST=~/projects/site/app/myvoice/swf"
 # alias playerbuild="make local DEST=/Users/byrd/projects/clients/browser/src/web/gulp/build/myvoice/swf"
 
 alias studentbuild="cd /Users/byrd/projects/clients/browser/src/vue-wrapper/student/ && yarn build && rm -rf /Users/byrd/projects/site/app/lti-student/* &&cp -r dist/* /Users/byrd/projects/site/app/lti-student"
 alias internalbuild="gulp dist --app internal && echo 'N' | gulp publish --app internal --local ~/projects/site/app"
 
+alias featurebitbuild="cd /Users/byrd/projects/clients/browser/src/vue-wrapper/micros/ && yarn build && cp /Users/byrd/projects/clients/browser/src/vue-wrapper/micros/dist/js/featureBit.js /Users/byrd/projects/site/app/micros/js && cp /Users/byrd/projects/clients/browser/src/vue-wrapper/micros/dist/css/featureBit.css /Users/byrd/projects/site/app/micros/css"
+
+alias coursesbuild="cd /Users/byrd/projects/clients/browser/src/vue-wrapper/student/ && yarn build && rm -rf /Users/byrd/projects/site/app/courses/* &&cp -r dist/* /Users/byrd/projects/site/app/courses"
