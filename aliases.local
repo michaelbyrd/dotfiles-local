@@ -18,9 +18,10 @@ alias dev="ssh dev"
 
 alias weather="curl wttr.in"
 
-alias mobileredirectbuild="./vt dist mobile-redirect && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/mobile-redirect/* /Users/byrd/projects/site/js/mobile-redirect/"
 alias graderbuild="./vt dist lti-grader  && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/lti-grader/* /Users/byrd/projects/site/app/lti-grader/"
-alias mobileredirectbuild="./vt dist mobile-redirect  && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/mobile-redirect/* /Users/byrd/projects/site/app/mobile-redirect/"
+
+alias mobileredirectbuild="./vt dist mobile-redirect && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/mobile-redirect/* /Users/byrd/projects/site/js/mobile-redirect/"
+
 alias playerbuild="make local DEST=~/projects/site/app/myvoice/swf"
 # alias playerbuild="make local DEST=/Users/byrd/projects/clients/browser/src/web/gulp/build/myvoice/swf"
 
