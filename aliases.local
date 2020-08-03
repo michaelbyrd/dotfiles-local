@@ -9,6 +9,7 @@ alias ga='git add -p'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias sync="./libexec/autorsync.py . dev:/opt/site --cleanup"
 # alias sync="./libexec/autorsync.py . dev:/opt/site"
+alias syncdevbash="scp /Users/byrd/dotfiles-local/dev-bashrc dev:/home/michael/.bashrc"
 
 alias mycommits="git log --since=7.days --author='Michael Byrd'"
 alias got="git"
@@ -31,3 +32,5 @@ alias internalbuild="gulp dist --app internal && echo 'N' | gulp publish --app i
 alias featurebitbuild="cd /Users/byrd/projects/clients/browser/src/vue-wrapper/micros/ && yarn build && cp /Users/byrd/projects/clients/browser/src/vue-wrapper/micros/dist/js/featureBit.js /Users/byrd/projects/site/app/micros/js && cp /Users/byrd/projects/clients/browser/src/vue-wrapper/micros/dist/css/featureBit.css /Users/byrd/projects/site/app/micros/css"
 
 alias coursesbuild="cd /Users/byrd/projects/clients/browser/src/vue-wrapper/student/ && yarn build && rm -rf /Users/byrd/projects/site/app/courses/* &&cp -r dist/* /Users/byrd/projects/site/app/courses"
+
+alias devsync="scp /Users/byrd/dotfiles-local/dev-bashrc dev:/home/michael/.bashrc"
