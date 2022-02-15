@@ -1,5 +1,6 @@
 # Productivity
 alias todo='$EDITOR ~/.todo'
+alias aliases='$EDITOR ~/dotfiles-local/aliases.local'
 alias notes='$EDITOR ~/.vim_notes'
 alias hack='$EDITOR ~/.hack'
 alias data='$EDITOR ~/.data'
