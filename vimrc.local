@@ -1,4 +1,4 @@
-colorscheme solarized
+"colorscheme solarized
 syntax enable
 
 let &t_Co=256

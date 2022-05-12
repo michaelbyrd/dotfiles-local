@@ -17,8 +17,12 @@ alias got="git"
 
 
 alias dev="ssh dev"
+alias myvoicebuild="gulp dist --app myvoice && echo 'N' | gulp publish --app myvoice --local ~/projects/builds/"
+alias managerbuild="gulp dist --app manager && echo 'N' | gulp publish --app manager --local ~/projects/builds/"
 
 alias weather="curl wttr.in"
+
+alias test="yarn test:unit --coverage=false"
 
 alias graderbuild="./vt dist lti-grader  && cp /Users/byrd/projects/clients/browser/src/web2/tmp/build/lti-grader/* /Users/byrd/projects/site/app/lti-grader/"
 
