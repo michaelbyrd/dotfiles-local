@@ -1,4 +1,4 @@
-"colorscheme solarized
+colorscheme solarized
 syntax enable
 
 let &t_Co=256
@@ -16,6 +16,10 @@ set textwidth=999
 "don't show tabs
 set nolist
 
+set autoread
+set updatetime=250
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * checktime
+
 let g:airline_theme='solarized'
 map <C-n> :NERDTreeToggle<CR>
 
@@ -31,8 +35,28 @@ nnoremap <F8> :TagbarToggle<CR>
 
 set noshowmode
 
-" Reset the arrow behavior
-nunmap <Up>
-nunmap <Right>
-nunmap <Down>
-nunmap <Left>
+let g:tagbar_type_elixir = {
+    \ 'ctagstype' : 'elixir',
+    \ 'kinds' : [
+        \ 'f:functions',
+        \ 'c:callbacks',
+        \ 'd:delegates',
+        \ 'e:exceptions',
+        \ 'i:implementations',
+        \ 'a:macros',
+        \ 'o:operators',
+        \ 'm:modules',
+        \ 'p:protocols',
+        \ 'r:records',
+        \ 't:tests'
+    \ ]
+\ }
+
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+
+augroup ale
+  autocmd!
+augroup END

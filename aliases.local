@@ -15,6 +15,7 @@ alias brew='arch -arm64 brew'
 
 alias mycommits="git log --since=7.days --author='Michael Byrd'"
 alias got="git"
+alias g="git status"
 
 
 
